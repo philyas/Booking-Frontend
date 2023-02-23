@@ -1,9 +1,12 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "name": "Booking-System",
+    "slug": "Booking-System",
     "version": "1.0.0",
     "orientation": "portrait",
+    "packagerOpts": {
+      "sourceExts": ["cjs"]
+    },
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -18,7 +21,10 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+       "infoPlist": {
+        "NSCalendarsUsageDescription": "schedules"
+       }
     },
     "android": {
       "adaptiveIcon": {
